@@ -44,7 +44,6 @@ form.addEventListener("submit", async (e) => {
   const college = document.getElementById("college").value;
   const file = document.getElementById("screenshot").files[0];
 
-  // Convert file to Base64
   const reader = new FileReader();
   reader.onload = async function () {
     const base64 = reader.result.split(',')[1];
@@ -58,7 +57,6 @@ form.addEventListener("submit", async (e) => {
       fileData: base64,
     };
 
-    // Send to Google Apps Script
     const response = await fetch('https://script.google.com/macros/s/AKfycbwyilQ2Gy28jsnsh63tBuX51q5eylkwFnFoZPcJgQ5qnaBfpbbZO-Cf-fHplcT_Q7y7/exec', {
       method: 'POST',
       body: JSON.stringify(formData),
