@@ -57,7 +57,7 @@ form.addEventListener("submit", async (e) => {
       fileData: base64,
     };
 
-    const response = await fetch('https://script.google.com/macros/s/AKfycbwyilQ2Gy28jsnsh63tBuX51q5eylkwFnFoZPcJgQ5qnaBfpbbZO-Cf-fHplcT_Q7y7/exec', {
+    const response = await fetch('https://script.google.com/macros/s/AKfycbyGMbARtDPg3M1hpQnwddwZhtdRCR-OlzWG--JRgcWbS_ioX0CJGyEbDh9AksKapHfkDA/exec', {
       method: 'POST',
       body: JSON.stringify(formData),
     });
