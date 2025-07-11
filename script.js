@@ -59,7 +59,7 @@ form.addEventListener("submit", async (e) => {
     };
 
     // Send to Google Apps Script
-    const response = await fetch('https://script.google.com/macros/s/AKfycbw1UiQjPK_MDsP-CyPwakVwtHid0zUSAvHgwfXj4i45Y2hBR3A0oJMs8uSc5LTplphW/exec', {
+    const response = await fetch('https://script.google.com/macros/s/AKfycbwyilQ2Gy28jsnsh63tBuX51q5eylkwFnFoZPcJgQ5qnaBfpbbZO-Cf-fHplcT_Q7y7/exec', {
       method: 'POST',
       body: JSON.stringify(formData),
     });
