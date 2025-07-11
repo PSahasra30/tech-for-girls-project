@@ -60,6 +60,9 @@ form.addEventListener("submit", async (e) => {
     const response = await fetch('https://script.google.com/macros/s/AKfycbwqMumob5q0ARRkj4cmH2krotiRGKpNAT65GS5s5XDtbb2luNMkYayEe6vAvNXlgdr1/exec', {
       method: 'POST',
       body: JSON.stringify(formData),
+      headers: {
+    "Content-Type": "application/json"
+    },
     });
 
     if (response.ok) {
